@@ -1,0 +1,107 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: sans-serif;
+}
+
+.tarefaMarcada{
+ opacity: .4;
+ text-decoration: line-through;
+}
+
+body{
+ background-image: linear-gradient(rgb(99, 99, 231) 50px, rgb(59, 59, 59));
+ background-repeat: no-repeat;
+ min-height: 100vh;
+}
+
+section{
+ max-width: 90%;
+ width: 20em;
+ margin: 4em auto 0;
+ box-shadow: 0 0 10px black;
+ padding: .5em;
+ background-color: white;
+ border-radius: .5em;
+}
+
+section h1{
+ text-align: center;
+ text-transform: uppercase;
+}
+
+ul{
+ list-style-type: none;
+ margin: 0;
+}
+
+input[type=text]{
+ width: 100%;
+ padding: .25em;
+ 
+}
+
+.buttonBtn{
+ width: 100%;
+ margin: .25em 0;
+ background-image: linear-gradient(rgb(22, 175, 22), rgb(34, 34, 34));
+ color: white;
+ text-transform: uppercase;
+ padding: .25em;
+ border: transparent;
+ border-radius: .5em;
+ cursor: pointer;
+}
+
+button:active{
+ transform: scale(.96);
+}
+
+.task-li{
+ display: flex;
+ border-bottom: .15em solid #ccc;
+ padding: .2em 0;
+ gap: 2em;
+}
+.spanTask{
+ flex: 1;
+}
+
+.btnCheck, .btnDelete{
+ background-color: transparent;
+ border: transparent;
+ color: green;
+ font-weight: bolder;
+ font-size: 1.2em;
+}
+
+.btnDelete{
+ color: red;
+}
+
+#btnFeedback{
+ font-size: 1.5em;
+ background-color: transparent;
+ color: white;
+ border: transparent;
+ padding: .5em;
+}
+
+#feedbackMessage{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ background-color: red;
+ padding: .25em 2em;
+ position: absolute;
+ right: 1em;
+ left: 1em;
+ top: 1em;
+ transform: translateY(calc(-150%));
+ transition: transform .5s ease-in-out;
+}
+
+#feedbackTxt{
+ color: white;
+}
